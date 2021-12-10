@@ -4,12 +4,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.fixed-header { /*Contenedor para fixear la Barra de tareas*/
+.fixed-header { /*Contenedor=> Section de clase fixed-header para fixear la Barra de tareas*/
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fffbf7;
+    background-color: #fffbf7; /*Darle color de fondo a la barra, usamos el color del body*/
 }
 
 .header {
@@ -82,25 +82,27 @@ p {
 }
 
 .signup-form {
-    height: 50px;
+    height: 55px;
 }
 
-.main input {
+.main .signup-form input {
     border-radius: 10px;
     border: 1px solid #b6b6b6;
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
+    height: 75%;
 }
 
-.main button {
+.main .signup-form button {
     color:#fff;
     background-color: #025157;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-left: -10px;
+    margin-left: -12px;
     border: 0;
     padding: 6px 20px;
+    height: 100%;
 }
 
 .main .img_central {
@@ -119,7 +121,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    flex: 1; /*propiedad de flex que asigna % de flex-contenedor que le corresponde al flex-item 1*/ /*Como el flex-contenedor contiene 2 items y ambos tienen flex:1, le corresponde 50% de contenedor a cada uno*/
 }
 
 .explanatory-video img{
@@ -130,7 +132,7 @@ p {
 .publish { /*flex-item 2*/
     margin-bottom: 0px;
     padding: 10px;
-    flex: 1;
+    flex: 1; /*propiedad de flex que asigna % de flex-contenedor que le corresponde al flex-item 2*/
 }
 
 .publish h3 {
@@ -166,7 +168,7 @@ p {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 6px 20px;
-    margin-left: -10px;
+    margin-left: -12px;
     height: 100%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
