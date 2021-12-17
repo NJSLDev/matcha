@@ -13,9 +13,10 @@ body {
 }
 
 .header {
-    margin: 40px 20px 0;
+    /* margin: 40px 20px 0;
     font-size: 0;
-    height: 80px;
+    height: 80px; */
+    background-color: #fffbf7;
 }
 
 .header li {
@@ -27,15 +28,15 @@ body {
     padding: 0;
 }
 
- .header > * {
+ /* .header > * {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
- }
+ } */
 
- .header .logo {
+ /* .header .logo {
     width: 20%;
- }
+ } */
 
  .header .navbar {
     text-align: center;
@@ -44,7 +45,7 @@ body {
 
 .header .actions {
     text-align: right;
-    width: 20%;
+    /* width: 20%; */
     font-size: 14px;
 }
 
@@ -390,4 +391,81 @@ height: 40px;
 
 .feature-image img:hover {
     left: 0;
+}
+
+@media (max-width: 425px) {
+    .navbar , .actions {
+        display: none;
+    }
+
+    .header .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main .imagen-propiedades {
+        width: 100%;
+    }
+
+    .promo {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .promo .explanatory-video video {
+        width: 100%;
+    }
+
+    .publish {
+        margin-top: 15px;
+    }
+
+    .promo .publish h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .promo .signup-form input {
+        width: 50%;
+    }
+
+    .features {
+        grid-template: repeat(4,1fr) / 1fr;
+        padding: 5% 0;
+        height: 1320px;
+    }
+
+    .feature-image {
+        display: none;
+    }
+
+    .success-stories {
+        display:block;
+        padding: 5% 5%;
+    }
+
+    .success-stories .overview {
+        padding-right: 0;
+    }
+
+    .success-stories .overview h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .success-stories .overview figure {
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    
 }
