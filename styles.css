@@ -28,6 +28,10 @@ body {
     padding: 0;
 }
 
+.navbar-light .nav-item .nav-link {
+    color: #025157;
+}
+
  /* .header > * {
     display: inline-block;
     font-size: 16px;
@@ -80,10 +84,12 @@ h4 {
 
 p {
     color:#8b8b8bcc;
+    margin: 1rem 0;
 }
 
 .signup-form {
     height: 55px;
+    margin: 1rem 0 1rem;
 }
 
 .main .signup-form input {
@@ -92,7 +98,7 @@ p {
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
-    height: 75%;
+    height: 100%;
 }
 
 .main .signup-form button {
@@ -158,7 +164,7 @@ p {
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
-    height: 75%;
+    height: 100%;
     border-radius: 8px;
 }
 
@@ -393,6 +399,112 @@ height: 40px;
     left: 0;
 }
 
+.how-does-it-work {
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.how-does-it-work .tittle {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+}
+
+.how-does-it-work .descryption {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.how-does-it-work .descryption a {
+    color: #67b54b;
+    text-decoration: none;
+    background-color: transparent;
+}
+ .how-does-it-work button {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px 12px 6px 12px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+ }
+
+ .how-does-it-work .steps {
+     margin: 70px 0 0;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+ }
+
+ .how-does-it-work .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+ }
+
+ .how-does-it-work .steps .card-step .card-step-image {
+     position: relative;
+     height: 350px;
+ }
+
+ .how-does-it-work .steps .card-step .card-step-image .card-step-bg {
+    width: 100%;
+    height: 100%;
+}
+
+ .how-does-it-work .steps .card-step .card-step-image .card-step-icon {
+     position: absolute;
+     top: 25px;
+     left: 25px;
+     width: 21px;
+
+ }
+
+ .how-does-it-work .steps .card-step .card-step-body {
+    padding: 15px;
+}
+
+.how-does-it-work .steps .card-step .card-step-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+}
+
+.how-does-it-work .steps .card-step .card-step-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 16px;
+}
+
+.how-does-it-work .steps .card-step .card-step-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 @media (max-width: 425px) {
     .navbar , .actions {
         display: none;
@@ -464,8 +576,187 @@ height: 40px;
     .success-stories .overview figure {
         margin: 1rem 0;
     }
+
+    .success-stories .stories-carousel .card .card-media img {
+        max-height: 80vw;
+    }
+
+    .how-does-it-work {
+        padding: 5% 0;
+    }
+
+    .how-does-it-work .steps {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .how-does-it-work .steps .card-step  {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+        align-items: center;
+        position: relative;
+    }
+
+    .how-does-it-work .steps .card-step .card-step-image {
+        height: auto;
+        position: initial;
+    }
+
+    .how-does-it-work .steps .card-step .card-step-body h3  {
+        margin-top: 30px;
+        text-align: left;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
-    
+    .navbar , .actions {
+        display: none;
+    }
+
+    .header .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main .imagen-propiedades {
+        width: 100%;
+    }
+
+    .promo {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .promo .explanatory-video video {
+        width: 100%;
+    }
+
+    .publish {
+        margin-top: 15px;
+    }
+
+    .promo .publish h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .promo .signup-form input {
+        width: 50%;
+    }
+
+    .features {
+        grid-template: repeat(4,1fr) / 1fr;
+        padding: 5% 0;
+        height: 1320px;
+    }
+
+    .feature-image {
+        display: none;
+    }
+
+    .success-stories {
+        display:block;
+        padding: 5% 5%;
+    }
+
+    .success-stories .overview {
+        padding: 5%;
+    }
+
+    /* .success-stories .overview h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .success-stories .overview figure {
+        margin: 1rem 0;
+    } */
+
+    .success-stories .stories-carousel .card .card-media img {
+        max-height: 80vw;
+    }
+
+    .success-stories .stories-carousel .card {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .how-does-it-work {
+        padding: 5% 0;
+    }
+
+    .how-does-it-work .steps {
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: auto;
+    }
+
+    .how-does-it-work .steps .card-step {
+        margin: 20px 5px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)  {
+        .main {
+            margin-top: 150px;
+        }
+
+        .promo {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .success-stories {
+            padding: 5% 5%; 
+        }
+
+        .success-stories .overview {
+            flex: 3;
+            padding-right: 40px;
+        }
+
+        .success-stories .overview figure {
+            margin: 1rem 0 1rem;
+        }
+
+        .success-stories .stories-carousel {
+            flex: 2;
+        }
+
+        .success-stories .stories-carousel .card .card-media img {
+            max-height: 30vw;
+        }
+
+        .features {
+            padding: 2% 2%;
+        }
+
+        .features .feature-card {
+            margin: 0 5px 10px;
+        }
+
+        .feature-content {
+            padding: 10px;
+        }
+
+        .how-does-it-work {
+            padding: 5% 5%;
+        }
+
+        .how-does-it-work .steps {
+            margin: 70px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+
 }
