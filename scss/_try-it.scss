@@ -1,0 +1,29 @@
+@use 'global' as *;
+
+.try-it {
+    padding: 5% 5% 2%;
+    background-color: $try-it-bg-color;
+    margin-top: -30px;
+    text-align: center;
+
+    h2 {
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 60px;
+        color: $dark-green-title;
+    }
+
+    .signup-form {
+        @extend %signup-form;
+    }
+
+    p {
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.tex-center {
+    @extend %text-center;
+}

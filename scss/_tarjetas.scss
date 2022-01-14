@@ -1,6 +1,10 @@
 @use 'global' as *;
 
 .blog {
+    background-color: $white;
+    max-width: unset;
+    padding: 5% 10%;
+
     h5 {
         font-size: 24px;
         color: $gray;

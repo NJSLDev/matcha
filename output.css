@@ -4,6 +4,39 @@
   font-weight: 700;
 }
 
+.tex-center {
+  text-align: center !important;
+}
+
+.cta .box .signup-form, .try-it .signup-form {
+  font-size: 14px;
+}
+.cta .box .signup-form input, .try-it .signup-form input {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  max-width: 250px;
+  height: 100%;
+  width: 60%;
+  border-radius: 8px;
+}
+.cta .box .signup-form button, .try-it .signup-form button {
+  background-color: #025157;
+  color: #ffffff;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 6px 20px;
+  margin-left: -10px;
+  height: 100%;
+  width: 40%;
+  max-width: 200px;
+}
+
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
 .blog h5 {
   font-size: 24px;
   color: #4a4a4a;
@@ -42,6 +75,68 @@
 }
 .blog .card {
   height: min(100%, 608px);
+}
+
+.try-it {
+  padding: 5% 5% 2%;
+  background-color: #96d178;
+  margin-top: -30px;
+  text-align: center;
+}
+.try-it h2 {
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #025157;
+}
+.try-it p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cta {
+  padding: 5% 10% 0;
+  margin: 0;
+  max-width: unset;
+}
+.cta .box {
+  background-color: #025157;
+  color: #ffffff;
+  padding: 5%;
+  border-radius: 10px;
+}
+.cta .box h2 {
+  font-family: "Alegreya", serif;
+  font-size: 34px;
+  max-width: 340px;
+  line-height: 1.3;
+}
+.cta .box p {
+  color: #fff;
+  margin-top: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.cta .box p > a {
+  color: #67b54b;
+  text-decoration: none;
+}
+.cta .box .signup-form input {
+  vertical-align: middle;
+}
+.cta .box .signup-form button {
+  background-color: #67b54b;
+  vertical-align: middle;
+}
+.cta .box form + p {
+  color: #b3cbcd;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 340px;
 }
 
 .blog {

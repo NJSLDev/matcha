@@ -1,5 +1,7 @@
 @use 'global' as *;
 @use 'tarjetas' as *;
+@use 'try-it' as *;
+@use 'cta' as *;
 
 .blog {
     background-color: $white;

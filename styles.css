@@ -94,8 +94,11 @@ p {
     margin: 1rem 0;
 }
 
-.signup-form {
+form {
     height: 55px;
+}
+
+.signup-form {
     margin: 1rem 0 1rem;
 }
 
@@ -250,12 +253,12 @@ height: 40px;
     width: 200px;
     position: absolute;
     top: 90px;
-    left: 30;
+    left: 30px;
     transition: left 0.5s;
 }
 
 .feature-image img:hover {
-    left: 0;
+    left: -90px;
 }
 
 .how-does-it-work {
@@ -529,6 +532,8 @@ height: 40px;
     width: 100%;
     display: block;
 }
+
+
 
 @media (max-width: 425px) {
     /* .navbar , .actions {

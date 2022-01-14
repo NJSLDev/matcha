@@ -5,6 +5,7 @@ $white:#ffffff;
 $gray: #4a4a4a;
 $light-gray: #979797;
 $light-green: #67b54b;
+$try-it-bg-color: #96d178;
 
 //Fuentes
 $font-title: "Alegreya", serif;
@@ -14,4 +15,33 @@ $font-title: "Alegreya", serif;
     font-family: $font-title;
     color: $dark-green-text;
     font-weight: 700;
+}
+
+%text-center {
+    text-align: center!important;
+}
+
+%signup-form {
+    font-size: 14px;
+    input {
+        border: 1px solid #b6b6b6;
+        padding: 6px 20px;
+        max-width: 250px;
+        height: 100%;
+        width: 60%;
+        border-radius: 8px;
+    }
+    button {
+        background-color: $dark-green-title;
+        color: $white;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 6px 20px;
+        margin-left: -10px;
+        height: 100%;
+        width: 40%;
+        max-width: 200px;
+        
+    }
 }
